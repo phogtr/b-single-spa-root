@@ -1,0 +1,21 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/react-mf-root-config.ts"],
+  "compilerOptions": {
+    "declarationDir": "dist"
+  },
+  "forceConsistentCasingInFileNames": true,
+  "removeComments": true,
+  "isolatedModules": true,
+  "strict": true,
+  "noImplicitAny": true,
+  "strictNullChecks": true,
+  "strictFunctionTypes": true,
+  "noImplicitThis": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "noImplicitReturns": true,
+  "noFallthroughCasesInSwitch": true,
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}

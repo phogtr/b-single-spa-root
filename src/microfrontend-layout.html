@@ -18,13 +18,16 @@
   -->
 
   <main>
+    <nav>
+      <application name="@react-mf/navbar" loader="topNav"></application>
+    </nav>
+    <route path="users">
+      <application name="@react-mf/users"></application>
+    </route>
     <route default>
       <!-- <application name="@single-spa/welcome"></application> -->
       <h1>Hello World Root</h1>
       <application name="@react-mf/home"></application>
-    </route>
-    <route path="users">
-      <application name="@react-mf/users"></application>
     </route>
   </main>
 </single-spa-router>

@@ -6,7 +6,14 @@ import {
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
 
-const routes = constructRoutes(microfrontendLayout);
+const layoutData = {
+  props: {},
+  loaders: {
+    topNav: "<h1>Loading topnav...</h1>",
+  },
+};
+
+const routes = constructRoutes(microfrontendLayout, layoutData);
 
 const applications = constructApplications({
   routes,
